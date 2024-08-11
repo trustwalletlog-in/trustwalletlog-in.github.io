@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-08-11 20:54",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nhttps://trustwalletlog-in.github.io/\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://trustwalletlog-in.github.io/sitemap.xml",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "19cbytigmp",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Trust Wallet Log In | Home",
+        "meta_descr": "Unlock the power of your cryptocurrency assets and explore the world of Web3 with Trust. The leading self-custody multi-chain platform. Download Trust app ...",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://trustwallet.com/\"><img src=\"@PROJECT_PATH@/assets/images/trustwallet.com-.png\" alt=\"Trust Wallet\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "ul9KmU5ty6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://trustwallet.com/\" class=\"text-primary\">Trust Wallet</a></b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Trust Wallet?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Trust Wallet is a decentralized wallet that supports a wide range of cryptocurrencies and tokens, including Ethereum, Binance Smart Chain (BSC), and many others. The wallet provides users with complete control over their private keys, which means that only the wallet owner has access to their funds. Trust Wallet is available as a mobile app on both iOS and Android platforms, making it accessible to a broad audience.<br><br>Features of Trust Wallet<br>Before diving into the login process, let's take a brief look at some of the standout features of Trust Wallet:<br><br>Multi-Currency Support: Trust Wallet supports thousands of cryptocurrencies and tokens, including popular ones like Bitcoin (BTC), Ethereum (ETH), and Binance Coin (BNB), as well as various altcoins and DeFi tokens.<br><br>Decentralized: As a non-custodial wallet, Trust Wallet ensures that users have complete ownership of their private keys. This means that only the user has access to their funds, reducing the risk of hacks associated with centralized exchanges.<br><br>Built-in DApp Browser: Trust Wallet includes a decentralized application (DApp) browser that allows users to interact with various decentralized finance (DeFi) platforms, NFT marketplaces, and other blockchain applications directly from the wallet.<br><br>Staking and Earning: Users can stake certain cryptocurrencies directly within Trust Wallet to earn rewards, allowing them to make their assets work for them.<br><br>User-Friendly Interface: The wallet's intuitive design makes it easy for both beginners and experienced users to navigate and manage their digital assets.<br><br>Trust Wallet Login Process<br>Logging into Trust Wallet is a straightforward process. Here’s how to do it:<br><br>Step 1: Download and Install the Trust Wallet App<br>Before you can log in, you need to have the Trust Wallet app installed on your mobile device. Follow these steps:<br><br>For iOS Users: Open the App Store, search for “Trust Wallet,” and download the official app developed by Binance.<br><br>For Android Users: Open the Google Play Store, search for “Trust Wallet,” and install the official app.<br><br>Make sure to download the app from official sources to avoid phishing scams or counterfeit apps.<br><br>Step 2: Create a New Wallet or Import an Existing Wallet<br>If you are a new user, you will need to create a new wallet:<br><br>Open the Trust Wallet app.<br>Tap on “Create a New Wallet.”<br>Agree to the terms of service and privacy policy.<br>You will be provided with a recovery phrase (seed phrase). Write it down and keep it in a secure location. This recovery phrase is crucial for accessing your wallet in case you lose your device or need to reinstall the app.<br>Confirm your recovery phrase by selecting the words in the correct order.<br>If you already have a Trust Wallet and want to log in to it:<br><br>Open the app.<br>Select “I already have a wallet.”<br>Choose the appropriate wallet type (e.g., Multi-Coin Wallet).<br>Enter your recovery phrase to access your wallet.<br>Step 3: Accessing Your Wallet<br>Once you’ve either created a new wallet or imported an existing one, you will be logged into Trust Wallet. The app will prompt you to set a passcode for added security. This passcode will be required every time you access the wallet, enhancing your security.<br><br>Step 4: Enabling Biometric Authentication (Optional)<br>For added convenience and security, you can enable biometric authentication (fingerprint or facial recognition) in the app’s settings. This allows you to log in quickly while keeping your wallet secure.<br><br>Security Best Practices for Trust Wallet<br>While Trust Wallet offers robust security features, it’s essential to follow best practices to ensure the safety of your funds:<br><br>Keep Your Recovery Phrase Secure: Your recovery phrase is the key to your wallet. Store it in a secure location and never share it with anyone. If someone gains access to your recovery phrase, they can access your funds.<br><br>Enable Two-Factor Authentication (2FA): While Trust Wallet itself does not require 2FA, if you use any exchanges or platforms linked to your wallet, enable 2FA for those accounts.<br><br>Regularly Update the App: Ensure you have the latest version of Trust Wallet installed. Regular updates often include security patches and improvements.<br><br>Be Wary of Phishing Scams: Always verify the URL or links you click on, especially if you are directed to enter your recovery phrase or private keys. Trust Wallet will never ask for your recovery phrase through email or messages.<br><br>Use Strong Passwords: If you create an account on a linked exchange or platform, use a strong and unique password.<br><br>Troubleshooting Login Issues<br>If you encounter issues logging into your Trust Wallet, consider the following:<br><br>Incorrect Recovery Phrase: Ensure that you are entering your recovery phrase correctly. It must be in the exact order and without any typos.<br><br>App Crashes or Bugs: If the app crashes or behaves unexpectedly, try restarting your device or reinstalling the app. Make sure to have your recovery phrase backed up before uninstalling.<br><br>Network Issues: Ensure you have a stable internet connection. If your connection is weak, it may hinder your ability to access your wallet or perform transactions.<br><br>Conclusion<br>Trust Wallet is a powerful tool for managing your cryptocurrency assets securely and conveniently. Understanding the login process and implementing best security practices will help you make the most of your Trust Wallet experience. Whether you are a beginner or an experienced user, Trust Wallet’s user-friendly interface and extensive features make it an excellent choice for anyone looking to engage with the world of cryptocurrencies. Remember to always prioritize security and stay informed about the latest developments in the crypto space to protect your investments effectively.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "ul9Kok0nLr",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
